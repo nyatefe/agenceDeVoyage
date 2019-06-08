@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AKWAABA T&T | Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Styles/templateStyle.css"/>
+	<style>
+		
+		.mySlides {
+			display: none
+		}
+		img {
+			vertical-align: middle;
+			height:400px
+		}
+		.slideshow-container {
+		  max-width: 1000px;
+		  position: relative;
+		  margin: auto;
+		  margin-bottom: 10px;
+		  margin-top: 10px;
+		}
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>AKWAABA travel & tours</h1>
+		<p style="font-size: 20px">A true experience of the west</p>
+	</div>
+	<div class="navbar">
+		<a href="index.html" class="link active">Home</a>
+		<a href="tours.html">Tours</a>
+		<a href="about_Us.html">About Us</a>
+		<a href="contact_Us.html">Contact Us</a>
+	</div>
+	<div>
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <img src="Media/Gallery/img1.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <img src="Media/Gallery/img2.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <img src="Media/Gallery/img3.jpg" style="width:100%">
+			</div>
+			
+			<div class="mySlides fade">
+			  <img src="Media/Gallery/img4.jpg" style="width:100%">
+			</div>
+			
+			<div class="mySlides fade">
+			  <img src="Media/Gallery/img5.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <img src="Media/Gallery/img6.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <img src="Media/Gallery/img7.jpg" style="width:100%">
+			</div>
+			
+			<div class="mySlides fade">
+			  <img src="Media/Gallery/img8.jpg" style="width:100%">
+			</div>
+			
+			<div class="mySlides fade">
+			  <img src="Media/Gallery/img9.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <img src="Media/Gallery/img10.jpg" style="width:100%">
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span style="font-size:50px; font-family:verdana">Welcome</span>
+			</div>
+	</div>
+	<div class="footer">
+		
+		<div class="contact">
+			<h4>where to find us:</h4>
+			<pre style="font-size: 15px">
+				24, Dadeban rd.
+				East Cantoments,
+				P.O. Box CT 247,
+				Cantoments - Accra.
+				Tel: +233 274587951
+			</pre>
+		</div>
+		<div class="newsletter">
+			Subscribe to our newsletter for notifications. 
+			<br/> <br/>
+			<input type="email" placeholder="email"/>
+			<input type="button" value="subscribe"/>
+		</div>
+		<img src="Media/Gallery/img11.jpg"/>
+	</div>
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}
+		  slides[slideIndex-1].style.display = "block";
+		  setTimeout(showSlides, 3000);
+		}
+	</script>
+	<script>
+		var header = document.getElementById("navbar");
+		var btns = header.getElementsByClassName("link");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function() {
+		  var current = document.getElementsByClassName("active");
+		  current[0].className = current[0].className.replace(" active", "");
+		  this.className += " active";
+		  });
+		}
+	</script>
+</body>
+</html>

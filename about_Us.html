@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AKWAABA T&T | About us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Styles/templateStyle.css"/>
+</head>
+<body>
+	<div class="header">
+		<h1>AKWAABA travel & tours</h1>
+		<p style="font-size: 20px">A true experience of the west</p>
+	</div>
+	<div class="navbar">
+		<a href="index.html">Home</a>
+		<a href="tours.html">Tours</a>
+		<a href="about_Us.html" class="link active">About Us</a>
+		<a href="contact_Us.html">Contact Us</a>
+	</div>
+	<div style="width: 60%; margin: auto; font-size:20px;">
+		<p>
+			At <b>AKWAABA travel & tours</b>, we seek to give you an experience you would love to return to all the time.
+			Our services include:
+			<ul>
+				<li>Accomodation</li>
+				<li>Transport</li>
+				<li>Tours</li>
+				<li>Catering</li>
+				<li>Bookings</li>
+				<li>Reservations</li>
+				<li>Event planning</li>
+			</ul>
+		</p>
+		<p>
+			Our dedicated and well-trained staff are ready to give you a true taste of the rich culture and help you discover your imagination.
+		</p>
+	</div>
+	<div class="footer">
+		
+		<div class="contact">
+			<h4>where to find us:</h4>
+			<pre style="font-size: 15px">
+				24, Dadeban rd.
+				East Cantoments,
+				P.O. Box CT 247,
+				Cantoments - Accra.
+				Tel: +233 274587951
+			</pre>
+		</div>
+		<div class="newsletter">
+			Subscribe to our newsletter for notifications. 
+			<br/> <br/>
+			<input type="email" placeholder="email"/>
+			<input type="button" value="subscribe"/>
+		</div>
+		<img src="Media/Gallery/img11.jpg"/>
+	</div>
+	
+	<script>
+		var header = document.getElementById("navbar");
+		var btns = header.getElementsByClassName("link");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function() {
+		  var current = document.getElementsByClassName("active");
+		  current[0].className = current[0].className.replace(" active", "");
+		  this.className += " active";
+		  });
+		}
+	</script>
+</body>
+</html>

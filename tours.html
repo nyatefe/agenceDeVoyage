@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AKWAABA T&T | Tours</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="Styles/templateStyle.css"/>
+	<style>
+		
+		.row > .column {
+		  padding: 0 8px;
+		}
+
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		.column {
+		  float: left;
+		  width: 25%;
+		}
+
+		img {
+		  margin-bottom: -4px;
+		}
+
+		img.hover-shadow {
+		  transition: 0.3s;
+		}
+		
+		.row img {
+		  height: 200px;
+		}
+
+		.hover-shadow:hover {
+		  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		}
+		.row {
+		  margin-bottom: 10px;
+		  margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>AKWAABA travel & tours</h1>
+		<p style="font-size: 20px">A true experience of the west</p>
+	</div>
+	<div class="navbar">
+		<a href="index.html" class="link">Home</a>
+		<a href="tours.html" class="link active">Tours</a>
+		<a href="about_Us.html" class="link">About Us</a>
+		<a href="contact_Us.html" class="link">Contact Us</a>
+	</div>
+	<div>
+		<div class="row">
+		  <div class="column">
+			<img src="Media\Gallery\aburi.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="Media\Gallery\afadjato.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="Media\Gallery\boti.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="Media\Gallery\kakum.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="column">
+			<img src="Media\Gallery\wli.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="Media\Gallery\theatre.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="Media\Gallery\sunset.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="Media\Gallery\umbrella.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="column">
+			<img src="Media\Gallery\hotel.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="Media\Gallery\festival.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="Media\Gallery\lake.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="Media\Gallery\kwahu.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+		  </div>
+		</div>
+	</div>
+	<div class="footer">
+		
+		<div class="contact">
+			<h4>where to find us:</h4>
+			<pre style="font-size: 15px">
+				24, Dadeban rd.
+				East Cantoments,
+				P.O. Box CT 247,
+				Cantoments - Accra.
+				Tel: +233 274587951
+			</pre>
+		</div>
+		<div class="newsletter">
+			Subscribe to our newsletter for notifications. 
+			<br/> <br/>
+			<input type="email" placeholder="email"/>
+			<input type="button" value="subscribe"/>
+		</div>
+		<img src="Media/Gallery/img11.jpg"/>
+	</div>
+	
+	<script>
+		var header = document.getElementById("navbar");
+		var btns = header.getElementsByClassName("link");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function() {
+		  var current = document.getElementsByClassName("active");
+		  current[0].className = current[0].className.replace(" active", "");
+		  this.className += " active";
+		  });
+		}
+	</script>
+</body>
+</html>
